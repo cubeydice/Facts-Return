@@ -8,18 +8,18 @@ module.exports = {
     themes: [
       {
         scaffoldEth: {
-          primary: "#2B5A26",
+          primary: "#2b5a26ff",
           "primary-content": "#FFFAFA",
           secondary: "#9DAA4B",
           "secondary-content": "#212638",
           accent: "#764134",
           "accent-content": "#212638",
           neutral: "#212638",
-          "neutral-content": "#ffffff",
-          "base-100": "#ffffff",
-          "base-200": "#f4f8ff",
-          "base-300": "#DAE8FF",
-          "base-content": "#212638",
+          "neutral-content": "#FFFAFA",
+          "base-100": "#2b5a26ff", //header
+          "base-200": "#FFFAFA", //input fields
+          "base-300": "#2d2d2d",
+          "base-content": "#FFFAFA",
           info: "#93BBFB",
           success: "#34EEB6",
           warning: "#FFCF72",
@@ -40,7 +40,7 @@ module.exports = {
       },
       {
         scaffoldEthDark: {
-          primary: "#212638",
+          primary: "#2B5A26",
           "primary-content": "#F9FBFF",
           secondary: "#323f61",
           "secondary-content": "#F9FBFF",
