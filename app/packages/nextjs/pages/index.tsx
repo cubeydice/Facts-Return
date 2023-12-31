@@ -10,15 +10,15 @@ const Home: NextPage = () => {
       <h1 className="text-8xl text-primary text-center px-20 pt-10">Facts Return</h1>
       <h2 className="text-7xl text-secondary text-center px-20 pb-10">A Decentralized AI Powered Tax Preparation System</h2>
       <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-        <Link href="/debug" passHref className="link no-underline">
-          <div className="flex flex-col bg-base-100 size-200 px-10 py-10 text-center items-center rounded-3xl">
+        <Link href="/services/manual" passHref className="link no-underline">
+          <div className="flex flex-col bg-base-100 size-60 px-10 py-10 text-center items-center rounded-3xl">
             <BugAntIcon className="h-8 w-8 fill-secondary" />
               <h2>File on your own</h2>
           </div>
         </Link>{" "}
 
         <Link href="/blockexplorer" passHref className="link no-underline">
-          <div className="flex flex-col bg-base-100 size-200 px-10 py-10 text-center items-center rounded-3xl">
+          <div className="flex flex-col bg-base-100 size-60 px-10 py-10 text-center items-center rounded-3xl">
             <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
               <h2>File with AI</h2>
           </div>
