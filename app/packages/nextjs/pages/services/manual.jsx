@@ -104,11 +104,11 @@ export default ManualEntryPage;
 const taxCalc = (box1, box2, box3, box4, box5, box6) => {
   //W2 Inputs
   let wages = box1; //W2 Box 1
-  let fedWH = box2; //W2 Box 2
-  let ssWages = box3; //W2 Box 3
-  let ssTW = box4; //W2 Box 4
-  let medWages = box5; //W2 Box 5
-  let medTW = box6; //W2 Box 6
+  const fedWH = box2; //W2 Box 2
+  const ssWages = box3; //W2 Box 3
+  const ssTW = box4; //W2 Box 4
+  const medWages = box5; //W2 Box 5
+  const medTW = box6; //W2 Box 6
 
   //Tax Rates
   const ssRate = 0.062;
@@ -120,6 +120,7 @@ const taxCalc = (box1, box2, box3, box4, box5, box6) => {
     [44725, 0.22],
     [11000, 0.12],
   ];
+  const stdDed = 13850;
 
   //Tax Liability Calc
   const ssTax = ssWages => {
@@ -132,6 +133,7 @@ const taxCalc = (box1, box2, box3, box4, box5, box6) => {
 
   const fedTax = wages => {
     let tax = 0;
+    wages -= stdDed;
 
     for (let i = 0; i < taxRates.length; i++) {
       let income = taxRates[i][0];
