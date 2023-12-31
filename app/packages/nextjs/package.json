@@ -51,5 +51,6 @@
     "type-fest": "~4.6.0",
     "typescript": "~5.1.6",
     "vercel": "~28.15.1"
-  }
+  },
+  "proxy":"http://localhost:5000/"
 }
