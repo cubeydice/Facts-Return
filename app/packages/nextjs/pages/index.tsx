@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           </div>
         </Link>{" "}
 
-        <Link href="/blockexplorer" passHref className="link no-underline">
+        <Link href="/services/ai" passHref className="link no-underline">
           <div className="flex flex-col bg-base-100 size-60 px-10 py-10 text-center items-center rounded-3xl">
             <MagnifyingGlassIcon className="h-8 w-8 fill-secondary" />
               <h2>File with AI</h2>
