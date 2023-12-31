@@ -79,7 +79,7 @@ function ManualEntryPage() {
       </form>
 
       <div>
-        Your tax {result > 0 ? "refund" : "due"} is {result}.
+        Your tax {result < 0 ? "refund" : "due"} is {result}.
       </div>
     </>
   );
