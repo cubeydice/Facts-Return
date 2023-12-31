@@ -14,12 +14,25 @@ contract Users {
     }
 
     User[] public users;
+    mapping(address => string) public userNames;
 
     function addUser(string memory _name, address _wallet) public {
         users.push(User(_name, _wallet));
     }
 
-    function getUser(uint index) public view returns (string memory, address) {
+    function getUserByIdx(uint256 index)
+        public
+        view
+        returns (string memory, address)
+    {
         return (users[index].name, users[index].wallet);
+    }
+
+    function getUserName(address _userAddress)
+        public
+        view
+        returns (string memory)
+    {
+        return userNames[_userAddress];
     }
 }
