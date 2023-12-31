@@ -50,7 +50,7 @@ function ManualEntryPage() {
 
       <div className="w-full max-w-xs items-center">
         <form onSubmit={handleSubmit} className="bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <h2 className="text-lg">Enter your tax year 2022 Form W-2 information</h2>
+          <h2 className="text-lg">Enter your tax year 2023 Form W-2 information</h2>
           <label className="block text-sm font-bold mb-2">
             Box 1 - Wages, tips, other compensation:
             <input type="number" name="box1" value={box1} onChange={handleInputChange("box1")} className="p-2 w-60 text-primary rounded-md"/>
