@@ -50,44 +50,45 @@ function ManualEntryPage() {
 
       <div className="w-full max-w-xs items-center">
         <form onSubmit={handleSubmit} className="bg-primary shadow-md rounded px-8 pt-6 pb-8 mb-4">
-          <h2>Enter your tax year 2022 Form W-2 information</h2>
-          <label className="block text-sm font-bold mb-2">
-            Box 1 - Wages, tips, other compensation:
-            <input type="number" name="box1" value={box1} onChange={handleInputChange("box1")} className="p-2 w-60 text-primary rounded-md"/>
-          </label>
-
-          <label className="block text-sm font-bold mb-2">
-            Box 2 - Federal income tax withheld:
-            <input type="number" name="box2" value={box2} onChange={handleInputChange("box2")} className="p-2 w-60 text-primary rounded"/>
-          </label>
-
-          <label className="block text-sm font-bold mb-2">
-            Box 3 - Social Security wages:
-            <input type="number" name="box3" value={box3} onChange={handleInputChange("box3")} className="p-2 w-60 text-primary rounded"/>
-          </label>
-
-          <label className="block text-sm font-bold mb-2">
-            Box 4 - Social Security tax withheld:
-            <input type="number" name="box4" value={box4} onChange={handleInputChange("box4")} className="p-2 w-60 text-primary rounded"/>
-          </label>
-
-          <label className="block text-sm font-bold mb-2">
-            Box 5 - Medicare wages and tips:
-            <input type="number" name="box5" value={box5} onChange={handleInputChange("box5")} className="p-2 w-60 text-primary rounded"/>
-          </label>
-
-          <label className="block text-sm font-bold mb-2">
-            Box 6 - Medicare tax withheld:
-            <input type="number" name="box6" value={box6} onChange={handleInputChange("box6")} className="p-2 w-60 text-primary rounded"/>
-          </label>
-
-          <button
-            type="submit"
-            className="bg-secondary hover:bg-yellow-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Submit
-          </button>{" "}
-          <br></br>
+          <div className="flex flex-col items-center">
+            <h2>Enter your tax year 2022 Form W-2 information</h2>
+            <label className="block text-sm font-bold mb-2">
+              Box 1 - Wages, tips, other compensation:
+              <input type="number" name="box1" value={box1} onChange={handleInputChange("box1")} className="p-2 w-60 text-primary rounded-md"/>
+            </label>
+  
+            <label className="block text-sm font-bold mb-2">
+              Box 2 - Federal income tax withheld:
+              <input type="number" name="box2" value={box2} onChange={handleInputChange("box2")} className="p-2 w-60 text-primary rounded"/>
+            </label>
+  
+            <label className="block text-sm font-bold mb-2">
+              Box 3 - Social Security wages:
+              <input type="number" name="box3" value={box3} onChange={handleInputChange("box3")} className="p-2 w-60 text-primary rounded"/>
+            </label>
+  
+            <label className="block text-sm font-bold mb-2">
+              Box 4 - Social Security tax withheld:
+              <input type="number" name="box4" value={box4} onChange={handleInputChange("box4")} className="p-2 w-60 text-primary rounded"/>
+            </label>
+  
+            <label className="block text-sm font-bold mb-2">
+              Box 5 - Medicare wages and tips:
+              <input type="number" name="box5" value={box5} onChange={handleInputChange("box5")} className="p-2 w-60 text-primary rounded"/>
+            </label>
+  
+            <label className="block text-sm font-bold mb-2">
+              Box 6 - Medicare tax withheld:
+              <input type="number" name="box6" value={box6} onChange={handleInputChange("box6")} className="p-2 w-60 text-primary rounded"/>
+            </label>
+  
+            <button
+              type="submit"
+              className="bg-secondary hover:bg-yellow-900 text-white font-bold my-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
 
