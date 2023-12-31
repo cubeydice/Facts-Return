@@ -15,7 +15,7 @@ function ManualEntryPage() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    setResult = taxCalc(box1, box2, box3, box4, box5, box6);
+    setResult(taxCalc(box1, box2, box3, box4, box5, box6));
   };
 
   const handleInputChange = field => e => {
