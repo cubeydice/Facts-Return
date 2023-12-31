@@ -1,0 +1,21 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "530a996b7fadf0790bf316f0d502ff223aedc61116710a0b24e13665c27d0a30"
+		},
+		"isalazar14": {
+			"address": "cddf79b68190cc02",
+			"key": {
+				"type": "file",
+				"location": "isalazar14.pkey"
+			}
+		}
+	}
+}
